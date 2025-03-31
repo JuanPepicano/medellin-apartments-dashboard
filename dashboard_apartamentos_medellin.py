@@ -13,7 +13,7 @@ import pandas as pd
 import plotly.express as px
 
 # Cargar datos
-df = pd.read_csv("houses_medellin_cleaned.csv")
+df = pd.read_csv("houses_medellin.csv")
 
 # Renombrar columnas para uso consistente
 df.rename(columns={
