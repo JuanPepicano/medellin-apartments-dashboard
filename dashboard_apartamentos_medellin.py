@@ -13,7 +13,7 @@ import pandas as pd
 import plotly.express as px
 
 # Cargar datos
-df = pd.read_csv("/content/drive/MyDrive/houses_medellin (1).csv")
+df = pd.read_csv("house_medellin_cleaned.csv")
 
 # Renombrar columnas para uso consistente
 df.rename(columns={
@@ -112,8 +112,6 @@ def update_scatter(banos):
     return fig
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8050)
 
-from google.colab import drive
-drive.mount("/content/drive")
 
